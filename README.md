@@ -1,26 +1,26 @@
 # Technical Coursework 📁
 
-A few more technical assignments from my degree. They're not the heart of my marketing and business focus, but I like keeping them here — they show how I work through a problem when it gets technical.
+A few more technical assignments from my degree. They're not the heart of my marketing and business focus, but I like keeping them here as they show how I work through a problem when it gets technical.
 
 *Reports and code comments are in Greek; the notes below are in English.*
 
 ---
 
-### security — cryptography & security
+### security: cryptography & security
 
 *Course: Protection & Security of Computing and Telecommunication Systems*
 
-**`Cryptography-AES-Integrity-Caesar.pdf`** — walked through the AES block cipher modes (ECB, CBC, CFB, CTR) with hands-on tools, verified a downloaded file's integrity against its published SHA-256 hash, and wrote a small Python brute-force that cracked a Caesar cipher across all 25 shifts.
+**`Cryptography-AES-Integrity-Caesar.pdf`** walked through the AES block cipher modes (ECB, CBC, CFB, CTR) with hands-on tools, verified a downloaded file's integrity against its published SHA-256 hash, and wrote a small Python brute-force that cracked a Caesar cipher across all 25 shifts.
 
-**`Cryptography-RSA-DiffieHellman.pdf`** — decrypted an RSA message by factoring the modulus and finding the private key with the extended Euclidean algorithm, recovered a private key from a public one, and solved a Diffie–Hellman key-exchange problem (shared secret and primitive-root proof included).
+**`Cryptography-RSA-DiffieHellman.pdf`** decrypted an RSA message by factoring the modulus and finding the private key with the extended Euclidean algorithm, recovered a private key from a public one, and solved a Diffie–Hellman key-exchange problem (shared secret and primitive-root proof included).
 
 *Shows:* cryptography basics, modular arithmetic, security tooling, a bit of scripting.
 
 ---
 
-### c-programs — string operations in C
+### c-programs: string operations in C
 
-**`string-operations.c`** — a little menu-driven program that searches for a character in a string, replaces one character with another, and checks whether a string is a palindrome.
+**`string-operations.c`**: a little menu-driven program that searches for a character in a string, replaces one character with another, and checks whether a string is a palindrome.
 
 > I cleaned this one up from the original coursework: fixed the palindrome check (it used to return the opposite result), set the length correctly, and swapped the unsafe `gets()` for `fgets()`. It now compiles cleanly with `gcc -Wall`.
 
@@ -31,7 +31,7 @@ gcc -Wall -o string-operations string-operations.c
 
 ---
 
-### systems-programming — TCP client–server
+### systems-programming: TCP client–server
 
 *Course: Systems Programming*
 
