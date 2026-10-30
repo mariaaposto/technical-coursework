@@ -18,7 +18,7 @@ A few more technical assignments from my degree. They're not the heart of my mar
 
 ---
 
-### c-programs: string operations in C
+### c-programs string operations in C
 
 **`string-operations.c`**: a little menu-driven program that searches for a character in a string, replaces one character with another, and checks whether a string is a palindrome.
 
