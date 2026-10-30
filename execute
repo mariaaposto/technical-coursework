@@ -1,0 +1,16 @@
+#!/bin/bash
+
+PORT=12345 # ορίζει την πόρτα στην οποία θα τρέχει ο server
+
+rm -f logfile # αν υπάρχει ήδη logfile, το διαγράφει
+
+./server $PORT > logfile & # ξεκινά τον server και γράφει την έξοδο στο logfile
+
+sleep 1 # περιμένει 1 δευτερόλεπτο ώστε ο server να είναι έτοιμος
+
+./producer $PORT >> logfile # τρέχει παραγωγό και καταγράφει την έξοδο
+./producer $PORT >> logfile # δεύτερος παραγωγός
+./consumer $PORT >> logfile # τρέχει καταναλωτή και καταγράφει την έξοδο
+./consumer $PORT >> logfile # δεύτερος καταναλωτής
+
+wait # περιμένει να ολοκληρωθούν όλα
