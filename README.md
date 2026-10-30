@@ -20,7 +20,7 @@ A few more technical assignments from my degree. They're not the heart of my mar
 
 ### c-programs string operations in C
 
-**`string-operations.c`**: a little menu-driven program that searches for a character in a string, replaces one character with another, and checks whether a string is a palindrome.
+**`string-operations.c`** a little menu-driven program that searches for a character in a string, replaces one character with another, and checks whether a string is a palindrome.
 
 > I cleaned this one up from the original coursework: fixed the palindrome check (it used to return the opposite result), set the length correctly, and swapped the unsafe `gets()` for `fgets()`. It now compiles cleanly with `gcc -Wall`.
 
